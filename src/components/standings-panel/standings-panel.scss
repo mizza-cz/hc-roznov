@@ -1,0 +1,81 @@
+.article-body,
+.standings-panel {
+  margin: 0px 0;
+}
+.article-body td,
+.article-body th,
+.standings-panel td,
+.standings-panel th {
+  padding: 0 10px;
+}
+.article-body td:first-child,
+.article-body th:first-child,
+.standings-panel td:first-child,
+.standings-panel th:first-child {
+  padding-left: 0;
+}
+.article-body td:last-child,
+.article-body th:last-child,
+.standings-panel td:last-child,
+.standings-panel th:last-child {
+  padding-right: 0;
+}
+.article-body thead th,
+.standings-panel thead th {
+  font-family: "Inter";
+  border-bottom: 2px solid #121619;
+  padding-top: 22px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+.article-body tbody tr:first-child td,
+.standings-panel tbody tr:first-child td {
+  padding-top: 8px;
+}
+.article-body th,
+.standings-panel th {
+  font-size: 12px;
+}
+.article-body td,
+.standings-panel td {
+  font-size: 14px;
+  vertical-align: middle;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.standings-panel .hb,
+.standings .hb {
+  font-weight: 700;
+}
+
+.panel {
+  border-radius: 4px;
+  border: 2px solid #121619;
+  background-color: rgba(77, 83, 88, 0.1);
+  margin-top: 48px;
+  padding: 32px 8px 8px;
+  position: relative;
+}
+.panel .h2,
+.panel h2 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  box-sizing: content-box;
+  margin: 0 auto;
+  white-space: nowrap;
+  padding: 8px 28px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: var(--color-red);
+  text-transform: uppercase;
+}

@@ -1,0 +1,21 @@
+.section {
+  border-top: 8px solid #f6f6f7;
+  margin-top: 48px;
+  margin-bottom: 32px;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    margin-top: 24px;
+  }
+}
+.section .h2,
+.section h2 {
+  position: absolute;
+  top: -20px;
+  white-space: nowrap;
+  padding: 0 16px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: var(--color-red);
+  text-transform: uppercase;
+}
