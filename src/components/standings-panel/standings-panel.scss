@@ -108,3 +108,23 @@
 .standings-panel ul li:not(:last-child) {
   border-bottom: black 1px solid;
 }
+.standings-panel__pub {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 320/150;
+  margin-bottom: 24px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.standings-panel button {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.season-list {
+  margin-bottom: 1.25rem;
+}

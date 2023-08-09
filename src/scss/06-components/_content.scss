@@ -1,4 +1,7 @@
 .o-content {
+  tr.roznov {
+    background: rgba(#a50013, 0.2);
+  }
   th {
     background-color: var(--color-red);
     color: var(--color-light);
@@ -25,10 +28,14 @@
     margin-bottom: 0;
   }
   h1 {
-    margin: 32px 0;
+    margin: 32px 0 24px;
   }
   h2 {
     margin-bottom: 16px;
+  }
+  h3 {
+    margin-top: 20px !important;
+    margin-bottom: 10px;
   }
 }
 .h1,
