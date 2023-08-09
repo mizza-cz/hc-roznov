@@ -1,4 +1,18 @@
 .o-content {
+  th {
+    background-color: var(--color-red);
+    color: var(--color-light);
+  }
+  td {
+    a {
+      font-weight: 600;
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
   &::after {
     display: table;
     clear: both;
@@ -9,6 +23,12 @@
   }
   > :last-child {
     margin-bottom: 0;
+  }
+  h1 {
+    margin: 32px 0;
+  }
+  h2 {
+    margin-bottom: 16px;
   }
 }
 .h1,

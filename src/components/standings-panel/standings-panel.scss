@@ -84,10 +84,22 @@
   padding-top: 8px;
 }
 .standings-panel ul li {
-  margin: 6px 16px;
+  margin: 0px 16px;
+  padding: 0;
+  display: block;
+
+  .active {
+    background: rgba(#a50013, 0.2);
+    font-weight: 600;
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
   a {
     text-decoration-color: transparent;
     transition: all 0.3s;
+    padding: 8px 12px;
+    display: block;
     &:hover {
       text-decoration-color: inherit;
     }
@@ -95,5 +107,4 @@
 }
 .standings-panel ul li:not(:last-child) {
   border-bottom: black 1px solid;
-  padding-bottom: 4px;
 }
