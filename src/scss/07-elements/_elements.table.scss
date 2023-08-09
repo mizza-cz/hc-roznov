@@ -1,0 +1,7 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table > :not(:first-child) {
+  border: none;
+}
