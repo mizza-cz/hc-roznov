@@ -20,6 +20,52 @@
     visibility: hidden;
     transition: opacity linear 0.3s, visibility linear 0.3s;
   }
+ 
+  &__social {
+    display: none;
+    margin-top: 24px;
+    li {
+      padding: 0 8px;
+
+      a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        transition: var(--transition);
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+    }
+    .kis {
+      width: 100%;
+      text-align: center;
+      margin-top: 16px;
+      justify-content: center;
+      display: flex;
+      a {
+        text-decoration: none;
+        letter-spacing: 1.5px;
+        font-family: "Dosis", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+    @include media-breakpoint-down(xl) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 .base {
   position: relative;
@@ -46,7 +92,7 @@
   opacity: 1;
   visibility: visible;
   left: 0;
-  top: 91px;
+  top: 3.5rem;
 }
 .is-nav-open .base::before {
   opacity: 1;
@@ -63,6 +109,7 @@
   text-decoration: underline;
   transition: var(--transition);
   text-decoration-color: transparent;
+  font-family: "Dosis", sans-serif;
   &:hover {
     color: var(--color-red);
     text-decoration-color: inherit;

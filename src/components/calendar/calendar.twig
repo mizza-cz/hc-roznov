@@ -1,0 +1,41 @@
+<section class="calendar">
+  <div class="container">
+    <div class="calendar__inner">
+      <div id="header">
+        <button id="backButton">{% include "@images/arrow-l.svg" %}</button>
+        <div id="monthDisplay"></div>
+        <button id="nextButton">{% include "@images/arrow-r.svg" %}</button>
+      </div>
+
+      <div id="weekdays">
+        <div>Po</div>
+        <div>Út</div>
+        <div>St</div>
+        <div>Čt</div>
+        <div>Pá</div>
+        <div>So</div>
+        <div>Ne</div>
+      </div>
+
+      <div id="calendar"></div>
+
+      <div id="newEventModal">
+        <input id="eventTitleInput" placeholder="Event Title" />
+
+        <button id="saveButton">Save</button>
+        <button id="cancelButton">Cancel</button>
+      </div>
+
+      <div id="deleteEventModal">
+        <h2>Event</h2>
+
+        <p id="eventText"></p>
+
+        <button id="deleteButton">Delete</button>
+        <button id="closeButton">Close</button>
+      </div>
+
+      <div id="modalBackDrop"></div>
+    </div>
+  </div>
+</section>
