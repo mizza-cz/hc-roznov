@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Event title",
+        "date": "8/11/2023",
+        "logo": "./images/ico/club-2.svg"
+    },
+    {
+        "title": "Event title",
+        "date": "8/17/2023",
+        "logo": "./images/content/logo.png"
+    },
+    {
+        "title": "Event title",
+        "date": "8/11/2023",
+        "logo": "./images/ico/club-2.svg"
+    },
+    {
+        "title": "Event title",
+        "date": "8/8/2023",
+        "logo": "./images/content/logo.png"
+    },
+    {
+        "title": "Event title",
+        "date": "8/23/2023",
+        "logo": "./images/ico/club-2.svg"
+    },
+    {
+        "title": "Event title",
+        "date": "8/4/2023",
+        "logo": "./images/ico/club-2.svg",
+        "links": []
+    }
+]

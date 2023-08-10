@@ -113,15 +113,15 @@ if (calendar) {
 
   // ...
 
-  function openModal() {
-    const newEventModal = document.getElementById("newEventModal");
-    const modalBackDrop = document.getElementById("modalBackDrop");
-    if (newEventModal && modalBackDrop) {
-      newEventModal.style.display = "block";
-      modalBackDrop.style.display = "block";
-      populateModal();
-    }
-  }
+  // function openModal() {
+  //   const newEventModal = document.getElementById("newEventModal");
+  //   const modalBackDrop = document.getElementById("modalBackDrop");
+  //   if (newEventModal && modalBackDrop) {
+  //     newEventModal.style.display = "block";
+  //     modalBackDrop.style.display = "block";
+  //     populateModal();
+  //   }
+  // }
 
   function closeModal() {
     const newEventModal = document.getElementById("newEventModal");

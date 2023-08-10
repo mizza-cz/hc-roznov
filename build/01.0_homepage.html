@@ -303,6 +303,49 @@
 							</section>
 						</div>
 						<div class="col-lg-4">
+							<section class="calendar">
+								<div class="calendar__inner">
+									<div id="header">
+										<button id="backButton"><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6.5 13L0 6.5m0 0L6.5 0M0 6.5h13" stroke="#671219" stroke-width="3.14" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" />
+											</svg></button>
+										<div id="monthDisplay"></div>
+										<button id="nextButton"><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6.5 13L13 6.5m0 0L6.5 0M13 6.5H0" stroke="#671219" stroke-width="3.14" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" />
+											</svg></button>
+									</div>
+
+									<div id="weekdays">
+										<div>Po</div>
+										<div>Út</div>
+										<div>St</div>
+										<div>Čt</div>
+										<div>Pá</div>
+										<div>So</div>
+										<div>Ne</div>
+									</div>
+
+									<div id="calendar"></div>
+
+									<div id="newEventModal">
+										<input id="eventTitleInput" placeholder="Event Title" />
+
+										<button id="saveButton">Save</button>
+										<button id="cancelButton">Cancel</button>
+									</div>
+
+									<div id="deleteEventModal">
+										<h2>Event</h2>
+
+										<p id="eventText"></p>
+
+										<button id="deleteButton">Delete</button>
+										<button id="closeButton">Close</button>
+									</div>
+
+									<div id="modalBackDrop"></div>
+								</div>
+							</section>
 							<section class="standings-panel panel p-3">
 								<h2>Tabulka A-tým</h2>
 								<table class="w-100 ms-0">
