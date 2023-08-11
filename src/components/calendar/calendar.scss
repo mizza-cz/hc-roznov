@@ -68,7 +68,7 @@
   .day {
     max-width: 14.28%;
     flex: 0 0 14.28%;
-    padding: 12px 12px 12px 20px;
+    padding: 12px;
     aspect-ratio: 60/40;
     box-sizing: border-box;
     background-color: white;
@@ -206,7 +206,6 @@
   .day.day-bg {
     color: var(--color-green);
     @include media-breakpoint-down(md) {
-      
     }
   }
   .popup {
