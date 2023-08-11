@@ -1,0 +1,21 @@
+.statistics-section {
+  .right {
+    text-align: right;
+  }
+  .center {
+    text-align: center;
+  }
+  .jmeno {
+    white-space: nowrap;
+  }
+  .o-content {
+    td {
+      border-bottom-width: 0.0625rem;
+      border-color: #c3c3c3;
+    }
+    h2 {
+      margin-bottom: 16px;
+      margin-top: 32px;
+    }
+  }
+}
