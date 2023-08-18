@@ -1,0 +1,114 @@
+<section class="player-section">
+  <div class="row gx-10">
+    <div class="col-lg-8">
+      <div class="player-section__item">
+        <img
+          loading="lazy"
+          src="images/content/logo.png"
+          class="lazyload"
+          alt=""
+        />
+        <div class="player-section__detail">
+          <h1 class="m-0 pr-2 text-white font-weight-bold h1">
+            #31 Adam Pavlíček
+          </h1>
+          <span>Brankář</span>
+        </div>
+      </div>
+      <ul class="player-section__list">
+        <li>
+          NAROZEN
+          <span>3.5.2004</span>
+        </li>
+        <li>
+          VÝŠKA
+          <span>192 CM</span>
+        </li>
+        <li>
+          VÁHA
+          <span>89 KG</span>
+        </li>
+        <li>
+          HŮL
+          <span>LEVÁ</span>
+        </li>
+      </ul>
+      <div class="o-content mt-lg-10 mt-6">
+        <h2 class="h2">POSLEDNÍCH 5 ZÁPASŮ</h2>
+        <table class="table mb-4">
+          <thead>
+            <tr>
+              <th>SEZÓNA</th>
+              <th style="width: 60px" class="text-uppercase center">G</th>
+              <th style="width: 60px" class="text-uppercase center">A</th>
+              <th style="width: 60px" class="text-uppercase center">B</th>
+              <th style="width: 60px" class="text-uppercase center">+/−</th>
+              <th
+                style="width: 60px"
+                class="text-uppercase center"
+                title="počet odehraných minut"
+              >
+                TMin
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10.04.2023 ZLN vs VSE <a href="#">(3:2p)</a></td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">+2</td>
+              <td class="center">0</td>
+            </tr>
+            <tr>
+              <td>10.04.2023 ZLN vs VSE <a href="#">(3:2p)</a></td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">+2</td>
+              <td class="center">0</td>
+            </tr>
+            <tr>
+              <td>10.04.2023 ZLN vs VSE <a href="#">(3:2p)</a></td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">+2</td>
+              <td class="center">0</td>
+            </tr>
+            <tr>
+              <td>10.04.2023 ZLN vs VSE <a href="#">(3:2p)</a></td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">+2</td>
+              <td class="center">0</td>
+            </tr>
+            <tr>
+              <td>10.04.2023 ZLN vs VSE <a href="#">(3:2p)</a></td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">0</td>
+              <td class="center">+2</td>
+              <td class="center">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="section">
+        <h2>Další zprávy</h2>
+        {% include "@components/post/post.twig" %} {% include
+        "@components/post/post.twig" %} {% include "@components/post/post.twig"
+        %}
+        <div class="text-end">
+          <a href="#" class="button"> Starší články </a>
+        </div>
+      </section>
+    </div>
+    <div class="col-lg-4">
+      {% include "@components/standings-panel/players-panel.twig" %}
+    </div>
+  </div>
+</section>

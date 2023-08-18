@@ -128,3 +128,15 @@
 .season-list {
   margin-bottom: 1.25rem;
 }
+.standings-panel .roaster {
+  a {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+  a span {
+    font-weight: 400;
+    display: block;
+    padding-left: 8px;
+  }
+}
