@@ -120,10 +120,13 @@
     object-fit: cover;
   }
 }
-.standings-panel button {
+.standings-panel .button {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  height: 34px;
+  white-space: nowrap;
+  width: max-content;
 }
 .season-list {
   margin-bottom: 1.25rem;
@@ -138,5 +141,63 @@
     font-weight: 400;
     display: block;
     padding-left: 8px;
+  }
+}
+
+.standings-panel .news-list {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: var(--color-red);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  li a {
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    display: initial;
+  }
+  li {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.panel-posts {
+  padding: 0 16px;
+}
+.panel-post {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid var(--color-dark);
+  &:last-child {
+    border: none;
+  }
+  &:hover {
+    .panel-post__title {
+      text-decoration-color: var(--color-dark);
+    }
+  }
+  &__date {
+    color: var(--color-red);
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  &__title {
+    font-size: 24px;
+    color: var(--color-dark);
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.3s;
   }
 }
