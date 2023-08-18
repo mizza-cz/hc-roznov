@@ -1,0 +1,14 @@
+.gallery-section {
+  .post .h3 {
+    margin: 0 !important;
+    padding: 0;
+    display: block;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .post .post-info {
+    margin-bottom: 8px;
+  }
+  
+}
