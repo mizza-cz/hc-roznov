@@ -1,4 +1,11 @@
 .o-content {
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin: 32px 0;
+    height: auto;
+  }
   ul {
     color: rgba(0, 17, 15, 1);
     font-size: 16px;
