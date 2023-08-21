@@ -1,0 +1,11 @@
+.typo {
+  td {
+    border-bottom: 1px solid rgba(#000, 0.2);
+  }
+  tr:first-child td {
+    border-top: 1px solid rgba(#000, 0.2);
+  }
+  td:first-child {
+    background: rgba(#a50013, 0.1);
+  }
+}
