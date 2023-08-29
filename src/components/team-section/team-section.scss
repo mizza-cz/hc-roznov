@@ -1,3 +1,95 @@
-.team-section{
-   
+.team-section {
+  &__item {
+    display: flex;
+    margin-bottom: 24px;
+    &:hover {
+      .team-section__info {
+        a {
+          text-decoration-color: #000;
+        }
+      }
+      a.team-section__img {
+        img {
+          opacity: 0.5;
+        }
+        &::after,
+        &::before,
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__info {
+    padding: 14px 8px 5px;
+    > div,
+    > a {
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      display: block;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--color-red);
+    }
+  }
+  &__img {
+    margin-right: 8px;
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--color-red);
+      display: block;
+      // opacity: 0;
+      transition: all 0.5s;
+    }
+    span {
+      transition: all 0.5s;
+      position: absolute;
+      // opacity: 0;
+      left: 0;
+      top: 17px;
+      right: 0;
+      margin: 0 auto;
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    img {
+      background: linear-gradient(180deg, #ece9e9 0%, #dad3d3 100%);
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      position: relative;
+      z-index: 99;
+      transition: all 0.4s;
+    }
+  }
+}
+
+.team-section__item:hover .team-section__img::after,
+.team-section__item:hover .team-section__img::before,
+.team-section__item:hover .team-section__img span {
+  opacity: 1;
 }

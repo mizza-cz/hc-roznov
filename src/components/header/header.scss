@@ -1,5 +1,5 @@
 .header {
-  background-color: #000;
+  background-color: var(--color-red);
   width: 100%;
   margin-bottom: 20px;
   @include media-breakpoint-down(xl) {
@@ -66,7 +66,7 @@
     font-size: 32px;
     line-height: 125%;
     display: block;
-    color: #fffe00;
+    color: #fff;
     text-decoration: none;
     font-family: "Dosis", sans-serif;
     font-weight: 700;
@@ -167,8 +167,8 @@
 }
 .c-header__opener.is-open {
   span {
-    border-color: var(--color-dark);
-    background: var(--color-dark);
+    border-color: transparent;
+    background: transparent;
   }
   span:before {
     transform: rotate(45deg);
