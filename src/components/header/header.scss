@@ -15,22 +15,48 @@
       justify-content: flex-start;
     }
     @include media-breakpoint-down(lg) {
-      padding-top: 22px;
-      padding-bottom: 22px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
   &__social {
     display: flex;
     align-items: center;
     padding-left: 28px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     @include media-breakpoint-down(xl) {
       margin-left: auto;
     }
     @include media-breakpoint-down(xl) {
+    }
+    .header__social-timeice {
       display: none;
+      @include media-breakpoint-down(xl) {
+        display: inline-block;
+        width: 100%;
+        padding-top: 4px;
+        a {
+          font-size: 28px;
+          display: block;
+          text-decoration: none;
+          font-weight: 700;
+          width: 100%;
+          text-align: right;
+          color: var(--color-light);
+          letter-spacing: 0.5px;
+          font-family: "Dosis", sans-serif;
+          @include media-breakpoint-down(xl) {
+            font-size: 20px;
+          }
+        }
+      }
     }
     .kis {
       padding-left: 28px;
+      @include media-breakpoint-down(xl) {
+        padding-left: 8px;
+      }
       a {
         text-decoration: none;
         font-weight: 700;
@@ -38,6 +64,9 @@
         color: var(--color-light);
         letter-spacing: 1.5px;
         font-family: "Dosis", sans-serif;
+        @include media-breakpoint-down(xl) {
+          font-size: 20px;
+        }
       }
     }
     li {
@@ -93,8 +122,11 @@
     background-color: #fff;
     transition: var(--transition);
     @include media-breakpoint-down(lg) {
-      width: 80px;
-      height: 80px;
+      width: 90px;
+      height: 90px;
+    }
+    @include media-breakpoint-down(sm) {
+      right: 80px;
     }
     &:hover {
       transform: scale(1.1);
@@ -181,7 +213,7 @@
   position: relative;
   width: 13.4375rem;
   margin-left: auto;
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xl) {
     display: none;
   }
 }
