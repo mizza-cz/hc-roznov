@@ -111,18 +111,6 @@ if (calendar) {
     }
   }
 
-  // ...
-
-  // function openModal() {
-  //   const newEventModal = document.getElementById("newEventModal");
-  //   const modalBackDrop = document.getElementById("modalBackDrop");
-  //   if (newEventModal && modalBackDrop) {
-  //     newEventModal.style.display = "block";
-  //     modalBackDrop.style.display = "block";
-  //     populateModal();
-  //   }
-  // }
-
   function closeModal() {
     const newEventModal = document.getElementById("newEventModal");
     const modalBackDrop = document.getElementById("modalBackDrop");
@@ -189,8 +177,9 @@ if (calendar) {
 
   initButtons();
 
+  const sourceURL = calendar.getAttribute("data-source"); // Získání URL z atributu data-source
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "data.json", true);
+  xhr.open("GET", sourceURL, true); // Použití získané URL pro načtení dat
   xhr.onload = function () {
     if (xhr.status === 200) {
       const eventsFromJson = JSON.parse(xhr.response);
