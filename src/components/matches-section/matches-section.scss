@@ -1,10 +1,4 @@
 .matches-section {
-  .win {
-    color: #327d46;
-  }
-  .lose {
-    color: #c20000;
-  }
   &__item {
     border-bottom: 1px solid #121619;
     padding-top: 24px;
@@ -107,4 +101,10 @@
       object-fit: contain;
     }
   }
+}
+.win {
+  color: #327d46;
+}
+.lose {
+  color: #c20000;
 }

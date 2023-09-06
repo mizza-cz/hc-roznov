@@ -50,6 +50,7 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
+    {% if title != "11.0_juniors" %}
     <div class="base">
       {% include "@components/header/header.twig" %}
       <div class="container">
@@ -62,6 +63,21 @@
       </div>
       {% include "@components/footer/footer.twig" %}
     </div>
+    {% else %}
+    <div class="base base-juniors">
+      {% include "@components/header/header-juniors.twig" %}
+      <div class="container">
+        <div class="base__inner">
+          {% include "@components/navigation/navigation.twig" %}
+          <main class="main" aria-label="Hlavní obsah">
+            {% block main %}{% endblock %}
+          </main>
+        </div>
+      </div>
+      {% include "@components/footer/footer-juniors.twig" %}
+    </div>
+    {% endif %}
+
     <script
       defer
       src="https://code.jquery.com/jquery-3.6.0.min.js"
