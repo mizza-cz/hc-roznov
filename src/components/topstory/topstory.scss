@@ -3,6 +3,9 @@
   aspect-ratio: 861/476;
   display: block;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
+
   &:hover .h1 {
     text-decoration-color: white;
   }
@@ -59,3 +62,15 @@
   width: 100%;
   content: "";
 }
+
+.topstory {
+  .panel {
+    margin-top: 1rem;
+  }
+  .panel-post {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+

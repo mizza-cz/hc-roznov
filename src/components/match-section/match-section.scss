@@ -83,3 +83,53 @@
     color: var(--color-green);
   }
 }
+
+.fotoalbum-section {
+  &__fotogalerie {
+    margin-top: 2rem;
+    figure {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 182/120;
+      margin: 0 !important;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      span {
+        color: var(--color-light);
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        left: 0;
+        line-height: 2.375rem;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        transition: all 0.3s;
+        width: 100%;
+      }
+    }
+  }
+}
+.fotoalbum-section__fotogalerie-link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(#a50013, 0.7);
+}
