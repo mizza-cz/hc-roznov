@@ -4,7 +4,24 @@
     align-items: center;
     padding: 0 8px;
   }
-  .juniors-menu {
+  &__menu {
     border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+    a {
+      max-width: 14.28%;
+      flex: 0 0 14.28%;
+      padding: 0 0.625rem;
+      text-align: center;
+      color: var(--color-red);
+      font-size: 1.125rem;
+      font-weight: 900;
+      line-height: 1.125rem;
+      text-decoration: none;
+    }
+    .active {
+      color: var(--color-dark);
+    }
   }
 }
